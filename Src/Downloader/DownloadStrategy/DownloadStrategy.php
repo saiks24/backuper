@@ -1,7 +1,9 @@
 <?php
 namespace saiks24\Downloader\Strategy;
 
+use saiks24\FileSystem\BackupFile;
+
 interface DownloadStrategy
 {
-    public function download();
+    public function download(String $pathToTmpFile) : BackupFile;
 }

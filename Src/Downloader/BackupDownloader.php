@@ -2,11 +2,15 @@
 
 namespace saiks24\Downloader;
 
+
 use saiks24\Downloader\Strategy\DownloadStrategy;
-
-interface BackupDownloader
+use saiks24\FileSystem\BackupFile;
+// TODO Maybe refactor to Observer class
+class BackupDownloader implements BackupDownloaderInterface
 {
-    public static function create() : self ;
 
-    public function backUpDownload(DownloadStrategy $strategy);
+    public function backUpDownload(String $pathToTmpFile, DownloadStrategy $strategy): BackupFile
+    {
+        return $strategy->download($pathToTmpFile);
+    }
 }

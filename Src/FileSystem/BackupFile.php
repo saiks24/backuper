@@ -4,9 +4,9 @@ namespace saiks24\FileSystem;
 
 interface BackupFile
 {
-    public function getSize();
+    public function getSize() : int;
 
-    public function getName();
+    public function getName() : string;
 
-    public function getPathInfo();
+    public function getPath() : string;
 }

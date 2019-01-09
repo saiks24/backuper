@@ -1,0 +1,24 @@
+{
+  "name": "saiks24/backuper",
+  "description": "A simple library to working with backups",
+  "homepage": "https://github.com/saiks24/backuper",
+  "authors": [
+    {
+      "name": "Smolin Mikhail",
+      "email": "saiks1337@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "GNU-3.0",
+  "require": {
+    "php": ">=7.0.0",
+    "nixsolutions/yandex-php-library": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "saiks24\\Downloader\\": "Src/Downloader",
+      "saiks24\\Downloader\\Strategy\\": "Src/Downloader/DownloadStrategy",
+      "saiks24\\FileSystem\\": "Src/FileSystem"
+    }
+  }
+}
