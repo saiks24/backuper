@@ -5,5 +5,5 @@ use saiks24\FileSystem\BackupFile;
 
 interface DownloadStrategy
 {
-    public function download(String $pathToTmpFile) : BackupFile;
+    public function download() : BackupFile;
 }

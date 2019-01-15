@@ -9,8 +9,8 @@ use saiks24\FileSystem\BackupFile;
 class BackupDownloader implements BackupDownloaderInterface
 {
 
-    public function backUpDownload(String $pathToTmpFile, DownloadStrategy $strategy): BackupFile
+    public static function backUpDownload(DownloadStrategy $strategy): BackupFile
     {
-        return $strategy->download($pathToTmpFile);
+        return $strategy->download();
     }
 }

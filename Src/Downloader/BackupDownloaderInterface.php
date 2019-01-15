@@ -6,5 +6,5 @@ use saiks24\FileSystem\BackupFile;
 
 interface BackupDownloaderInterface
 {
-    public function backUpDownload(String $pathToTmpFile, DownloadStrategy $strategy): BackupFile;
+    public static function backUpDownload(DownloadStrategy $strategy): BackupFile;
 }

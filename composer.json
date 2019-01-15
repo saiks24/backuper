@@ -16,9 +16,15 @@
   },
   "autoload": {
     "psr-4": {
+      "saiks24\\App\\": "Src/App",
+      "saiks24\\Exceptions\\": "Src/Exceptions",
       "saiks24\\Downloader\\": "Src/Downloader",
+      "saiks24\\Uploader\\": "Src/Uploader",
       "saiks24\\Downloader\\Strategy\\": "Src/Downloader/DownloadStrategy",
-      "saiks24\\FileSystem\\": "Src/FileSystem"
+      "saiks24\\Uploader\\Strategy\\": "Src/Uploader/UploadStrategy",
+      "saiks24\\FileSystem\\": "Src/FileSystem",
+      "saiks24\\CreateBackup\\": "Src/CreateBackup",
+      "saiks24\\CreateBackup\\Strategy\\": "Src/CreateBackup/Strategy"
     }
   }
 }
