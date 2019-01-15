@@ -24,6 +24,7 @@
       "saiks24\\Uploader\\Strategy\\": "Src/Uploader/UploadStrategy",
       "saiks24\\FileSystem\\": "Src/FileSystem",
       "saiks24\\CreateBackup\\": "Src/CreateBackup",
+      "saiks24\\Core\\": "Src/Core",
       "saiks24\\CreateBackup\\Strategy\\": "Src/CreateBackup/Strategy"
     }
   }
